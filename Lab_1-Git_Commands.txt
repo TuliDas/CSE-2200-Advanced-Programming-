@@ -1,0 +1,53 @@
+Tuli Rani Das
+Roll: 1507064
+Section : B1
+Dept : Computer Science & Engineering
+
+
+
+-- From task of the previous lab, here I am giving a short description about Git commands--
+
+
+    --PRIMARY COMMANDS
+
+	* git init - Initialize a git repo
+	* git add . - Add all change in The Directory
+	* git commit -m "Message" - commit with a message
+	* git log - List of all commits. (also can be sorted out by time)
+	* git status - Changes to be committed. (The changes that were made)
+	* git diff filename - show changes in the file
+	* git commit -am "msg" - add and commit. (Caveat - Does not work with renaming)
+	* git checkout (SHA optional) -- filename - If we need to revert the changes (If added the git reset needs to be used)
+	* git commit --ament -m "msg" - Make EDITS to RECENT commit or the HEAD.
+	* git commit --ammend -m "" -- Change the LAST/RECENT commit.
+	* git checkout branch -- checkout the branch and make everything look like that that branch
+	* git checkout -- filename or directory name -- checkout the file in previous commit and make everything look like that
+
+
+--- PUSH & PULL----
+	* git push -u (remote branch) (branch name we want to put) -- push the branch to remote repository
+	* git clone (repo location) (any name to directory) -- make a clone to the directory of the repository we specified	 
+    *git push --all -u (Pushing all branched to remote)
+    *git branch -d <branch_name> (Deleting local branch)
+    git checkout -b [name_of_your_new_branch] (Create the branch on your local machine and switch in this branch)
+    *git push origin [name_of_your_new_branch] (Push the branch on github )
+
+
+
+    ---- BRANCHING ----
+
+	* git branch branch_name --- creates a new branch
+	* git checkout branch_name --- switches to the branch_name. Actually it makes the directory like branch_name
+	* git diff branch1..branch2 --- difference between branch1 and branch2
+	* git branch -d branch_name --- SAFELY DELETE the branch
+	* git branch -D branch_name --- UNSAFELY DELETE the branch	
+	* git clean -f --- remove untracked files
+	* git clean -f -d --- remove untracked directories
+	* git merge branchname --- merges the branch specified with the branch currently checked in. merging will merge all the changes and then all will be committed.
+	* git push origin --delete branch_name --- delete branch of remote repository
+  
+
+    *** Merging a remote branch---
+
+	1. Merge the branch locally,
+	2. then push the branch
